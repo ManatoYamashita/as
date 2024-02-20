@@ -1,3 +1,10 @@
+:root {
+  --primary: #5EBFB7;
+  --blue: #51657C;
+  --yellow: #E7DAB0;
+  --red: #CD7374
+}
+
 html,
 body {
   padding: 0;
@@ -19,8 +26,8 @@ body {
 }
 
 a {
-  color: #2563eb;
   text-decoration: none;
+  color: inherit;
 }
 
 * {

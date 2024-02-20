@@ -1,0 +1,65 @@
+.wrap {
+    display: inline-flex;
+    width: 100%;
+    padding-top: 4rem;
+    justify-content: flex-end;
+  }
+  
+.button {
+    position: relative;
+    background-color: var(--primary);
+    border: none;
+    color: #fff;
+    border-radius: 6rem;
+    padding: .7rem 2.2rem;
+    margin: 1rem;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .tip {
+    position: absolute;
+    top: 0;
+    font-size: .8rem;
+    width: 8rem;
+    background: #fff;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .tip::before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .button:hover .tip {
+    top: -3rem;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .btn:hover,
+  .button:hover .tip,
+  .button:hover .tip::before {
+    background: var(--primary);
+    color: #fff;
+  }
+
+  

@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import Head from "next/head";
-import { getDatabase, getPage, getBlocks } from "../lib/notion";
+import { getDatabase, getPage, getBlocks } from "../lib/notion.js";
 import Link from "next/link";
-import { databaseId } from "./index.js";
+import { databaseId } from "./index.jsx";
 import styles from "./post.module.css";
 
 export const Text = ({ text }) => {
@@ -232,6 +232,6 @@ export const getStaticProps = async (context) => {
       page,
       blocks: blocksWithChildren,
     },
-    revalidate: 1, //ISR...前回から何秒以内のアクセスを無視するか指定します。
+    revalidate: 10, //ISR...前回から何秒以内のアクセスを無視するか指定します。
   };
 };

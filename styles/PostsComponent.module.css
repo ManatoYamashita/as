@@ -1,0 +1,51 @@
+.wrap {
+    width: 70%;
+    height: 100%;
+    background-color: #f5f5f5;
+    padding: 1rem 2rem;
+    border-radius: .3rem;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: .5rem;
+}
+.sub {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 0 0 0 1rem;
+}
+    .sub::before {
+        content: '';
+        width: 1.2rem;
+        height: 1px;
+        background-color: #333;
+        margin-right: .5rem;
+    }
+
+.posts {
+    color: #333;
+}
+.post {
+    margin-bottom: 1rem;
+    padding-top: .5rem;
+    list-style: none;
+    border-bottom: solid 1px #666;
+}
+.postTitle {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: .5rem;
+}
+.postDescription {
+    font-size: .8rem;
+    font-weight: 400;
+    color: #666;
+}

@@ -1,0 +1,14 @@
+.wrap {
+    overflow-x: hidden;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    width: 18rem;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
