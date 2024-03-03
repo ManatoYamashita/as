@@ -32,7 +32,7 @@ export function Posts({ posts }) {
                 );
             })}
             </ul>
-            <Btn btn="もっと見る" tip="じゃーーんぷ！" />
+            <Btn btn="もっと見る" tip="じゃーーんぷ！" to="/about" />
         </div>
     );
 }
