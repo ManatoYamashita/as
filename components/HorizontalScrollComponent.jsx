@@ -8,22 +8,26 @@ import { Songs } from './SongsComponent.jsx';
 gsap.registerPlugin(ScrollTrigger);
 
 export function HorizontalScrollComponent() {
+  // コンポーネントがマウントされた時に実行されるuseEffectフック
   useEffect(() => {
+    // `.panel`クラスを持つ要素を配列として取得
     const sections = gsap.utils.toArray(".panel");
-
+    
+    // `sections`に対してアニメーションを適用
     gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".container",
-        pin: true,
-        invalidateOnRefresh: true,
-        anticipatePin: 1,
-        scrub: 1.23,
-        end: () => "+=" + document.querySelector(".container").offsetWidth
+      xPercent: -100 * (sections.length - 1), // 横方向への移動距離を設定
+      ease: "none", // アニメーションのイージングを無効にする
+      scrollTrigger: { // スクロールトリガーの設定
+        trigger: ".container", // アニメーションが起動するトリガーとなる要素
+        pin: true, // スクロール中に`.container`要素を固定する
+        invalidateOnRefresh: true, // ウィンドウのリサイズ時にアニメーションをリセットする
+        anticipatePin: 1, // アニメーションが開始する前にピン操作を行う
+        scrub: 1, // スクロールとアニメーションの同期をどの程度スムーズにするか（数字が大きいほどスムーズ）
+        end: () => "+=" + document.querySelector(".container").offsetWidth // アニメーションの終了点を設定
       }
     });
-  }, []);
+  }, []); // 空の依存配列で、マウント時にのみ効果を実行する
+
   
   return (
     <div className="container">
@@ -95,7 +99,6 @@ export function HorizontalScrollComponent() {
         }
       `}</style>
     </div>
-
     
   );
 }
