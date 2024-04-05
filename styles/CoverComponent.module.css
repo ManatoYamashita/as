@@ -4,6 +4,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+    overflow: hidden;
   }
 
   .main {
@@ -21,7 +22,17 @@
     object-fit: cover;
     z-index: -1;
   }
-  
+  .circle1 {
+    position: absolute;
+    top: 40%;
+    right: 0%;
+    width: 75rem;
+    height: 75rem;
+    border-radius: 100rem;
+    background-color: var(--primary);
+    z-index: -2;
+    animation: scale 1s ease-in-out forwards;
+  }
   .msg {
     position: absolute;
     padding: 3rem;
@@ -35,4 +46,13 @@
   .strong {
     color: var(--primary);
     font-size: 5rem;
+  }
+
+  @keyframes scale {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
