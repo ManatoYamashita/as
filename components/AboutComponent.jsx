@@ -12,7 +12,7 @@ export function About() {
             <h2 className={styles.heading}>About</h2>
             <data className={styles.sub}>天羽しろっぷとは</data>
             <p className={styles.passage}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque est veritatis voluptatem id perferendis illo delectus fugit? Quasi, dolores, ab eos facilis ut vel veniam obcaecati quas iusto officiis iste?</p>
-            <Image src={SatouImage} alt="佐藤あま" />
+            <Image src={SatouImage} alt="佐藤あま" className={styles.image} />
             <Btn btn="変身" tip="こんろぷー" to="/" />
         </div>
     );

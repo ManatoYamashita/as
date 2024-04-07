@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
 :root {
   --primary: #5EBFB7;
   --blue: #51657C;
   --yellow: #E7DAB0;
-  --red: #CD7374
+  --red: #CD7374;
 }
 
 html,

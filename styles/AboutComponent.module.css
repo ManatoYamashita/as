@@ -22,4 +22,10 @@
     }
 .passage {
     color: #333;
+    width: 60%;
+}
+.image {
+    width: 40%;
+    height: auto;
+    z-index: -1;
 }

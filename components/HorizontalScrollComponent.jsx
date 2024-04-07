@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import styles from "../styles/HorizontalScrollComponent.module.css"
 
 import { About } from './AboutComponent.jsx';
 import { Songs } from './SongsComponent.jsx';
@@ -22,7 +23,7 @@ export function HorizontalScrollComponent() {
         pin: true, // スクロール中に`.container`要素を固定する
         invalidateOnRefresh: true, // ウィンドウのリサイズ時にアニメーションをリセットする
         anticipatePin: 1, // アニメーションが開始する前にピン操作を行う
-        scrub: 1, // スクロールとアニメーションの同期をどの程度スムーズにするか（数字が大きいほどスムーズ）
+        scrub: 0, // スクロールとアニメーションの同期をどの程度スムーズにするか（数字が大きいほどスムーズ）
         end: () => "+=" + document.querySelector(".container").offsetWidth // アニメーションの終了点を設定
       }
     });
@@ -74,7 +75,6 @@ export function HorizontalScrollComponent() {
         .panel {
           display: flex;
           position: relative;
-          width: 100vw;
           height: 100vh;
         }
 

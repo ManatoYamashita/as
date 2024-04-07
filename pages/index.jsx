@@ -11,7 +11,7 @@ export const databaseId = process.env.NOTION_DATABASE_ID;
 
 export default function Home({ posts }) {
   return (
-    <div>
+    <div className={styles.wrap}>
       <Head>
         <title>AmauSyrup unofficial</title>
         <link rel="icon" href="/favicon.ico" />
@@ -19,12 +19,13 @@ export default function Home({ posts }) {
 
       <main className={styles.container}>
         <header className={styles.header}>
-          <Header />
+          {/* <Header /> */}
         </header>
 
         <Cover />
 
         <section className={styles.section1}>
+          <span className={styles.circle1}></span>
           <Posts posts={posts} /> 
         </section>
 
