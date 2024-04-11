@@ -45,7 +45,7 @@
     }
 .passage {
     color: #333;
-    width: 75%;
+    width: 100%;
     font-size: 1.1rem;
 }
 .image {
@@ -59,4 +59,30 @@
     font-weight: 700;
     color: #333;
     margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .wrap {
+        width: 100%;
+    }
+    .paragraphs {
+        order: 1;
+        width: 100vw;
+        padding: 1rem;
+    }
+    .charactor {
+        order: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    .image {
+        margin-left: 10vw;
+        height: 100vh;
+        width: auto;
+    }
+    .chardetail {
+        position: relative;
+        right: 100vw;
+        bottom: 50vw;
+    }
 }

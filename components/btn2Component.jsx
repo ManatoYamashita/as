@@ -1,4 +1,3 @@
-// Btn2コンポーネントの修正
 import React from 'react';
 import styles from '../styles/btnComponent.module.css';
 

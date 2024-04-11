@@ -79,3 +79,18 @@
       transform: translateY(0);
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .wrap {
+      border: 1rem solid var(--primary);
+    }
+    .amau {
+      height: 100vh;
+      width: auto;
+      left: -135vw;
+    }
+    .title {
+      font-size: 3rem;
+      top: 70%;
+    }
+  }

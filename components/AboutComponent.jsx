@@ -3,7 +3,7 @@ import styles from "../styles/AboutComponent.module.css";
 import Btn2 from "./btn2Component.jsx";
 import Image from "next/image";
 import SatouImage from "../assets/satou.PNG";
-import AmauImage from "../assets/amau.PNG";
+import AmauImage from "../assets/amau.webp";
 
 export function About() {
     const [currentImage, setCurrentImage] = useState(SatouImage);

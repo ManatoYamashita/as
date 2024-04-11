@@ -84,7 +84,7 @@
     top: 100%;
     width: 140%;
     height: 180%;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: transparent;
     border-radius: 50%;
     display: block;
     transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
