@@ -44,38 +44,15 @@
   align-items: flex-end;
   justify-content: center;
   height: 100vh;
+  width: 100vw;
   padding: 3rem 1rem;
   background-color: #333f4d;
   z-index: 0;
 }
-/* .section1::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-color: var(--primary);
-  transform: skewY(2deg);
-  transform-origin: top right;
-} */
-.circle1 {
-  position: absolute;
-  top: 50%;
-  right: -15vw;
-  width: 100vw;
-  height: 100vw;
-  border-radius: 100rem;
-  background-color: var(--primary);
-  z-index: -2;
-  animation: scale 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-
-}
 
 .footer {
-  width: 100%;
-  height: 100%;
-  padding: 10vh 2rem;
+  width: 100vw;
+  height: 100vw;
   position: relative;
   z-index: 0;
   top: 0;

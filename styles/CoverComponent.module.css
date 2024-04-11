@@ -1,21 +1,23 @@
-  .container {
+  .wrap {
     box-sizing: border-box;
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 1rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
   }
 
   .main {
     position: relative;
     height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .background {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
     z-index: -2;
   }
 
@@ -37,8 +39,9 @@
     font-family: 'Dela Gothic One', cursive;
     font-weight: 400;
     color: white;
-    top: 50%;
-    left: 0;
+    top: 40%;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    left: 1rem;
     z-index: 1;
     line-height: 1.5;
     opacity: 0;
@@ -46,65 +49,22 @@
     animation-delay: 2.5s;
   }
 
-  .logo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 20vh;
-    width: auto;
-    z-index: 1;
+  .subtitle {
+    text-align: end;
+    margin: 0;
+    font-size: 2rem;
     opacity: 0;
     animation: fadeUp 1s ease-in-out forwards;
-    animation-delay: 2s;
-  }
-
-  .circle1 {
-    position: absolute;
-    top: -1rem;
-    right: -20rem;
-    transform: translate(-50%, -50%);
-    height: 20rem;
-    width: 20rem;
-    border-radius: 50rem;
-    background-color: rgb(201, 0, 0);
-    animation: scale 1s ease-in-out forwards;
-    transition: all 0.5s;
-  }
-  .circle1:hover {
-    top: -2rem;
-    right: -25rem;
-    width: 25rem;
-    height: 25rem;
-    background-color: rgb(229, 0, 0);
-    transition: all 0.5s;
-  }
-  .youtube {
-    position: absolute;
-    top: 1rem;
-    right: -1rem;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 1.2rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 1rem;
-    animation: fadeUp 1s ease-in-out forwards;
-    animation-delay: 3.2s;
-  }
-  .material {
-    position: absolute;
-    bottom: 1rem;
-    left: -1rem;
-    transform: translate(-50%, -50%);
-    width: 20rem;
-    height: 20rem;
-    z-index: 1;  
+    animation-delay: 3s;
   }
 
   @keyframes scale {
     0% {
+      opacity: 0;
       transform: scale(0);
     }
     100% {
+      opacity: 1;
       transform: scale(1);
     }
   }

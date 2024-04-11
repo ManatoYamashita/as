@@ -3,9 +3,10 @@ import { getDatabase } from "../lib/notion.js";
 import styles from "./index.module.css";
 
 import { Posts } from "../components/PostsComponent.jsx";
-import { Header } from "../components/HeaderComponent.jsx";
+import { Corner } from "../components/CornerComponent.jsx";
 import { Cover } from "../components/CoverComponent.jsx";
 import { HorizontalScrollComponent } from "../components/HorizontalScrollComponent.jsx";
+import { CircleAnim } from "../components/circleAnimComponent.jsx";
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
@@ -18,14 +19,12 @@ export default function Home({ posts }) {
       </Head>
 
       <main className={styles.container}>
-        <header className={styles.header}>
-          {/* <Header /> */}
-        </header>
-
+        <Corner />
+        
         <Cover />
 
         <section className={styles.section1}>
-          <span className={styles.circle1}></span>
+          <CircleAnim  size={100} top={"10rem"} right={"-15vw"} />
           <Posts posts={posts} /> 
         </section>
 

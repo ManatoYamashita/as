@@ -1,0 +1,161 @@
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 20vh;
+    width: auto;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeUp 1s ease-in-out forwards;
+    animation-delay: 2s;
+  }
+
+  .youtube {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    z-index: 1;
+  }
+  .circle1 {
+    position: absolute;
+    top: -10rem;
+    right: -10rem;
+    transform: translate(-50%, -50%);
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50rem;
+    background-color: rgb(201, 0, 0);
+    color: white;
+    z-index: 1;
+    animation: scale 1s ease-in-out forwards;
+    transition: all 0.5s;
+    will-change: transform;
+  }
+  .circle1:hover {
+    width: 21rem;
+    height: 21rem;
+    background-color: rgb(229, 0, 0);
+    transition: all 0.5s;
+  }
+  .yt {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-family: oswald, sans-serif;
+    font-weight: 400;
+    color: white;
+    z-index: 1;
+  }
+
+  .bottom {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+  .xcom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+  }
+  .circle2 {
+    position: absolute;
+    bottom: -10rem;
+    left: -10rem;
+    transform: translate(-50%, -50%);
+    height: 20rem;
+    width: 20rem;
+    border: white 2px solid;
+    border-radius: 50rem;
+    background-color: black;
+    color: white;
+    z-index: 1;
+    animation: scale 1s ease-in-out forwards;
+    transition: all 0.5s;
+    will-change: transform;
+  }
+  .circle2:hover {
+    width: 21rem;
+    height: 21rem;
+    background-color: black;
+    transition: all 0.5s;
+  }
+  .x {
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-family: oswald, sans-serif;
+    font-weight: 400;
+    color: white;
+    z-index: 1;
+  }
+
+  .fanbox {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    z-index: 1;
+  }
+  .circle3 {
+    position: absolute;
+    bottom: -10rem;
+    right: -10rem;
+    transform: translate(-50%, -50%);
+    height: 20rem;
+    width: 20rem;
+    border: white 2px solid;
+    border-radius: 50rem;
+    background-color: black;
+    color: white;
+    z-index: 1;
+    animation: scale 1s ease-in-out forwards;
+    transition: all 0.5s;
+    will-change: transform;
+  }
+  .circle3:hover {
+    width: 21rem;
+    height: 21rem;
+    background-color: black;
+    transition: all 0.5s;
+  }
+  .fb {
+    position: absolute;
+    top: 25%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-family: oswald, sans-serif;
+    font-weight: 400;
+    color: white;
+    z-index: 1;
+  }
+   
+  @keyframes scale {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

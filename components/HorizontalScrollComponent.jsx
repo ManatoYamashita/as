@@ -79,22 +79,15 @@ export function HorizontalScrollComponent() {
         }
 
         .s-1 {
-          padding: 10vh 2rem;
           z-index: 0;
         }
         .s-2 {
-          padding: 10vh 2rem;
-          z-index: 0;
           background-color: var(--blue);       
         }
         .s-3 {
-          padding: 10vh 2rem;
-          z-index: 0;
           background-color: var(--yellow);
         }
         .s-4 {
-          padding: 10vh 2rem;
-          z-index: 0;
           background-color: var(--primary);
         }
       `}</style>

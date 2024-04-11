@@ -1,6 +1,5 @@
 import Image from "next/image";
 import AmauImage from "../assets/amausyrup.webp";
-import logo from "../assets/amausyrup-logo-white.webp";
 import styles from "../styles/CoverComponent.module.css";
 import CoverImage from "./CoverImage";
 
@@ -11,14 +10,12 @@ export function Cover() {
     return (
         <div className={styles.wrap}>
             <div className={styles.main}>
-                <CoverImage className={styles.background} gif={coverGif} poster={coverWebp} time={3300} repeat={false} />
+                <CoverImage className={styles.background} gif={coverGif} poster={coverWebp} time={3500} repeat={false} />
                 <Image src={AmauImage} alt="天羽しろっぷ" className={styles.amau} />
                 <h1 className={styles.title}>
                     天羽しろっぷ
+                    <p className={styles.subtitle}>非公式ファンサイト</p>
                 </h1>
-                <Image src={logo} alt="logo" className={styles.logo}></Image>
-                <span className={styles.circle1}></span>
-                <p className={styles.youtube}>YouTube</p>
             </div>
         </div>
     )
