@@ -15,7 +15,7 @@ export function Corner() {
                 <a href="https://twitter.com/syrupchan0/bio" target="_blank" className={styles.xcom}>
                     <span className={styles.circle2}><p className={styles.x}>X</p></span>
                 </a>
-                <a href="https://twitter.com/syrupchan0/bio" target="_blank" className={styles.fanbox}>
+                <a href="https://syrupchan0.fanbox.cc" target="_blank" className={styles.fanbox}>
                     <span className={styles.circle3}><p className={styles.fb}>fanbox</p></span>
                 </a>
             </div>

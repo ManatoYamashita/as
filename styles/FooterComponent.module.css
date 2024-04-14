@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Rubik:wght@400;500;700&display=swap");
+
+.wrap {
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.newsletter_title {
+  font-family: "Noto Serif Display", serif;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: left;
+}
+.c_link {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  transition: 0.3s ease-in;
+  border-bottom: 1px solid transparent;
+  margin-bottom: 0.5rem;
+  display: inline-flex;
+}
+.c_link:hover {
+  border-bottom: 1px solid black;
+}
+.c_nav_tool_list {
+  list-style-type: none;
+  padding: 0;
+}
+.flex {
+  display: flex;
+}
+.footer_back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  border: none;
+}
+.footer_inner {
+    background: black;
+    /* Safari 9+, iOS Safari 9+ に対応 */
+    -webkit-backdrop-filter: blur(50px);
+    /* backdrop-filterをサポートするブラウザに対応 */
+    backdrop-filter: blur(50px);
+    /* Firefoxなどbackdrop-filterをサポートしないブラウザ用のフォールバック */
+    background: rgba(255, 255, 255, 0.8);
+    border: 0.1px solid rgba(233, 232, 232, 0.208);
+    border-radius: 5px;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+.wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+/* .left {
+  width: 70%;
+} */
+/* .middle, .right {
+  width: 25%;
+} */
+
+@media (min-width: 675px) {
+  .layout {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 2rem;
+  }
+  .newsletter_title {
+    font-size: 1.5rem;
+  }
+  .w-50 {
+    width: 50%;
+  }
+  .w-25 {
+    width: 25%;
+  }
+}
+.svg {
+  margin: 0.5rem;
+}
+.c-2 {
+  margin-top: 3.5rem;
+}
+.footer_copyright {
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 1rem 0;
+
+}

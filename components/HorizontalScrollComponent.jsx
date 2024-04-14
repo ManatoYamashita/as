@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import styles from "../styles/HorizontalScrollComponent.module.css"
 
 import { About } from './AboutComponent.jsx';
 import { Songs } from './SongsComponent.jsx';
@@ -16,7 +15,7 @@ export function HorizontalScrollComponent() {
     
     // `sections`に対してアニメーションを適用
     gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1), // 横方向への移動距離を設定
+      xPercent: -100 * (sections.length - 1) , // 横方向への移動距離を設定
       ease: "none", // アニメーションのイージングを無効にする
       scrollTrigger: { // スクロールトリガーの設定
         trigger: ".container", // アニメーションが起動するトリガーとなる要素
@@ -32,63 +31,39 @@ export function HorizontalScrollComponent() {
   
   return (
     <div className="container">
-      <section className="panel s-1">
+      <section id="section2" className="panel s-1">
         <About />
       </section>
 
-      <section className="panel s-2">
+      <section id="section3" className="panel s-2">
         <Songs />
       </section>
 
-      <section className="panel s-3">
-      </section>
-
-      <section className="panel s-4">
-      </section>
+      {/* <section id="section4" className="panel s-3">
+      </section> */}
 
       <style jsx global>{`
-        html,
-        body {
-          margin: 0;
-          padding: 0;
-          width: 100%;
-          height: 100%;
-          overflow-x: hidden;
-          overflow-scrolling: touch;
-        }
-        html {
-          height: 100%;
-          overflow-y: scroll;
-        }
-        body {
-          position: relative;
-          height: unset;
-          overflow-x: hidden;
-          overflow-y: visible;
-        }
         .container {
           display: flex;
           flex-wrap: nowrap;
-          width: 400%;
+          width: 100%;
           height: 100vh;
+          scroll-snap-type: y mandatory;    
         }
         .panel {
           display: flex;
           position: relative;
           height: 100vh;
+          width: 100vw;
         }
 
         .s-1 {
           z-index: 0;
+          scroll-snap-align: end;
         }
         .s-2 {
-          background-color: var(--blue);       
-        }
-        .s-3 {
-          background-color: var(--yellow);
-        }
-        .s-4 {
-          background-color: var(--primary);
+          background-color: var(--blue);  
+          scroll-snap-align: end;
         }
       `}</style>
     </div>

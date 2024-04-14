@@ -27,6 +27,7 @@
     width: 20rem;
     border-radius: 50rem;
     background-color: rgb(201, 0, 0);
+    border: white 2px solid;
     color: white;
     z-index: 1;
     animation: scale 1s ease-in-out forwards;
@@ -113,7 +114,7 @@
     width: 20rem;
     border: white 2px solid;
     border-radius: 50rem;
-    background-color: black;
+    background-color: blue;
     color: white;
     z-index: 1;
     animation: scale 1s ease-in-out forwards;
@@ -123,7 +124,7 @@
   .circle3:hover {
     width: 21rem;
     height: 21rem;
-    background-color: black;
+    background-color: blue;
     transition: all 0.5s;
   }
   .fb {

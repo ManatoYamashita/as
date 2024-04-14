@@ -21,10 +21,16 @@
     z-index: -2;
   }
 
+  .imagewrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .amau {
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
     height: 100vh;
     width: auto;
     z-index: -1;
@@ -35,7 +41,7 @@
   
   .title {
     position: absolute;
-    font-size: 10rem;
+    font-size: 12vw;
     font-family: 'Dela Gothic One', cursive;
     font-weight: 400;
     color: white;
@@ -85,9 +91,7 @@
       border: 1rem solid var(--primary);
     }
     .amau {
-      height: 100vh;
-      width: auto;
-      left: -135vw;
+      width: 1000px;
     }
     .title {
       font-size: 3rem;
