@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Text } from "../pages/[id].jsx";
 import styles from "../styles/PostsComponent.module.css";
 
-import {Btn} from "./btnComponent.jsx";
+import { Btn } from "./btnComponent.jsx";
 
 export function Posts({ posts }) {
     return (
@@ -33,6 +33,7 @@ export function Posts({ posts }) {
             })}
             </ul>
             <Btn btn="もっと見る" tip="じゃーーんぷ！" to="/about" />
+
         </div>
     );
 }

@@ -8,94 +8,65 @@ import { Songs } from './SongsComponent.jsx';
 gsap.registerPlugin(ScrollTrigger);
 
 export function HorizontalScrollComponent() {
+  // コンポーネントがマウントされた時に実行されるuseEffectフック
   useEffect(() => {
+    // `.panel`クラスを持つ要素を配列として取得
     const sections = gsap.utils.toArray(".panel");
-
+    
+    // `sections`に対してアニメーションを適用
     gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".container",
-        pin: true,
-        invalidateOnRefresh: true,
-        anticipatePin: 1,
-        scrub: 1.23,
-        end: () => "+=" + document.querySelector(".container").offsetWidth
+      xPercent: -100 * (sections.length - 1) , // 横方向への移動距離を設定
+      ease: "none", // アニメーションのイージングを無効にする
+      scrollTrigger: { // スクロールトリガーの設定
+        trigger: ".container", // アニメーションが起動するトリガーとなる要素
+        pin: true, // スクロール中に`.container`要素を固定する
+        invalidateOnRefresh: true, // ウィンドウのリサイズ時にアニメーションをリセットする
+        anticipatePin: 1, // アニメーションが開始する前にピン操作を行う
+        scrub: 0, // スクロールとアニメーションの同期をどの程度スムーズにするか（数字が大きいほどスムーズ）
+        end: () => "+=" + document.querySelector(".container").offsetWidth // アニメーションの終了点を設定
       }
     });
-  }, []);
+  }, []); // 空の依存配列で、マウント時にのみ効果を実行する
+
   
   return (
     <div className="container">
-      <section className="panel s-1">
+      <section id="section2" className="panel s-1">
         <About />
       </section>
 
-      <section className="panel s-2">
+      <section id="section3" className="panel s-2">
         <Songs />
       </section>
 
-      <section className="panel s-3">
-      </section>
-
-      <section className="panel s-4">
-      </section>
+      {/* <section id="section4" className="panel s-3">
+      </section> */}
 
       <style jsx global>{`
-        html,
-        body {
-          margin: 0;
-          padding: 0;
-          width: 100%;
-          height: 100%;
-          overflow-x: hidden;
-          overflow-scrolling: touch;
-        }
-        html {
-          height: 100%;
-          overflow-y: scroll;
-        }
-        body {
-          position: relative;
-          height: unset;
-          overflow-x: hidden;
-          overflow-y: visible;
-        }
         .container {
           display: flex;
           flex-wrap: nowrap;
-          width: 400%;
+          width: 100%;
           height: 100vh;
+          scroll-snap-type: y mandatory;    
         }
         .panel {
           display: flex;
           position: relative;
-          width: 100vw;
           height: 100vh;
+          width: 100vw;
         }
 
         .s-1 {
-          padding: 10vh 2rem;
           z-index: 0;
+          scroll-snap-align: end;
         }
         .s-2 {
-          padding: 10vh 2rem;
-          z-index: 0;
-          background-color: var(--blue);       
-        }
-        .s-3 {
-          padding: 10vh 2rem;
-          z-index: 0;
-          background-color: var(--yellow);
-        }
-        .s-4 {
-          padding: 10vh 2rem;
-          z-index: 0;
-          background-color: var(--primary);
+          background-color: var(--blue);  
+          scroll-snap-align: end;
         }
       `}</style>
     </div>
-
     
   );
 }

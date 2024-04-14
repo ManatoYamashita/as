@@ -1,3 +1,26 @@
+.wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    padding: 0 2rem;
+}
+.paragraphs {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 1rem 0 1rem 2rem;
+    flex-wrap: wrap;
+    align-content: center;
+    color: #333;
+}
+.charactor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 100%;
+}
 .heading {
     font-size: 2rem;
     font-weight: 700;
@@ -5,9 +28,9 @@
     margin-bottom: .5rem;
 }
 .sub {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    color: #666;
+    color: #333;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -22,4 +45,47 @@
     }
 .passage {
     color: #333;
+    width: 100%;
+    font-size: 1rem;
+}
+.image {
+    height: 100vh;
+    width: auto;
+    z-index: -1;
+    transition: all 1s ease-in-out;
+}
+.chardetail {
+    text-align: end;
+}
+.name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .wrap {
+        width: 100%;
+    }
+    .paragraphs {
+        order: 1;
+        width: 100vw;
+        padding: 1rem;
+    }
+    .charactor {
+        order: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    .image {
+        margin-left: 10vw;
+        height: 100vh;
+        width: auto;
+    }
+    .chardetail {
+        position: relative;
+        right: 100vw;
+        bottom: 50vw;
+    }
 }
