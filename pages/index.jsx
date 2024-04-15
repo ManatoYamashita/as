@@ -11,6 +11,7 @@ import { CircleAnim } from "../components/circleAnimComponent.jsx";
 import { Footer } from "../components/FooterComponent.jsx";
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
+const pageOgImg = `${process.env.NEXT_PUBLIC_DEFAULT_SITE_URL}`;
 
 export default function Home({ posts }) {
   return (
