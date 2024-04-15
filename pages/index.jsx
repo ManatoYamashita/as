@@ -2,6 +2,7 @@ import Head from "next/head";
 import { getDatabase } from "../lib/notion.js";
 import styles from "./index.module.css";
 
+import { SeoHead } from "../components/SeoHeadComponent.jsx";
 import { Posts } from "../components/PostsComponent.jsx";
 import { Corner } from "../components/CornerComponent.jsx";
 import { Cover } from "../components/CoverComponent.jsx";
@@ -15,10 +16,13 @@ export const databaseId = process.env.NOTION_DATABASE_ID;
 export default function Home({ posts }) {
   return (
     <div className={styles.wrap}>
-      <Head>
-        <title>AmauSyrup unofficial</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <SeoHead
+      title={"AmauSyrup.net - 天羽しろっぷ"}
+      titleTemplate={"天羽しろっぷ 非公式ファンサイト"}
+      description={"AmauSyrup.netは、VTuber『天羽しろっぷ』の非公式ファンサイトです。notionAPIを使用して、天羽しろっぷの最新情報をお届けします。"}
+      ogType={"website"}
+      imgUrl={`${pageOgImg}/ogp.webp`}
+    />
 
       <main className={styles.container}>
         <Corner />
