@@ -1,8 +1,7 @@
-import Head from "next/head";
 import { getDatabase } from "../lib/notion.js";
 import styles from "./index.module.css";
 
-import { SeoHead } from "../components/SeoHeadComponent.jsx";
+import { SeoHead } from "../components/SeoHead.jsx";
 import { Posts } from "../components/PostsComponent.jsx";
 import { Corner } from "../components/CornerComponent.jsx";
 import { Cover } from "../components/CoverComponent.jsx";
