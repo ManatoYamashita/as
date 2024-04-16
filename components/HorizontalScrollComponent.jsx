@@ -39,8 +39,9 @@ export function HorizontalScrollComponent() {
         <Songs />
       </section>
 
-      {/* <section id="section4" className="panel s-3">
-      </section> */}
+      <section id="section4" className="panel s-3">
+        <span className="spn"></span>
+      </section>
 
       <style jsx global>{`
         .container {
@@ -64,6 +65,17 @@ export function HorizontalScrollComponent() {
         .s-2 {
           background-color: var(--blue);  
           scroll-snap-align: end;
+        }
+        .s-3 {
+          background-color: white;
+          scroll-snap-align: end;
+        }
+
+        .spn {
+          display: block;
+          width: 100vw;
+          height: 100vh;
+          background-color: white;
         }
       `}</style>
     </div>

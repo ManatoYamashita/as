@@ -18,25 +18,6 @@ export function Cover() {
                     天羽しろっぷ
                     <p className={styles.subtitle}>非公式ファンサイト</p>
                 </h1>
-                {/* <nav className={styles.nav}>
-                    <ul>
-                        <li>
-                            <Scroll to="section1" smooth={true} duration={500} offset={-100}>
-                                最新情報
-                            </Scroll>
-                        </li>
-                        <li>
-                            <Scroll to="section2" smooth={true} duration={500} offset={-100}>
-                                活動
-                            </Scroll>
-                        </li>
-                        <li>
-                            <Scroll to="section3" smooth={true} duration={500} offset={-100}>
-                                お知らせ
-                            </Scroll>
-                        </li>
-                    </ul>
-                </nav> */}
             </div>
         </div>
     )

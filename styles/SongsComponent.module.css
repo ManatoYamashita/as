@@ -1,11 +1,17 @@
 .wrap {
     width: 100vw;
     height: 100vh;
-    padding: 3rem;
-    padding-top: 10rem;
+    padding: 3rem 1rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     overflow: hidden;
+}
+
+.paragraph {
+    width: 100%;
+    padding: 1rem;
 }
 
 .heading {
@@ -46,10 +52,7 @@
 
 @media screen and (max-width: 768px) {
     .wrap {
-        width: 100%;
-        padding: 2rem;
-        padding-top: 5rem;
-    }
+        }
     .heading {
         font-size: 2rem;
     }
@@ -58,7 +61,8 @@
     }
     .passage {
         font-size: 1rem;
-        width: 100vw;
+        width: 100%;
+        padding: 1rem;
     }
     .songsarea {
         gap: 1rem;

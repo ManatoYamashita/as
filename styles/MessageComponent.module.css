@@ -28,4 +28,20 @@
     font-size: 0.5em;
     display: block;
   }
+
+  @media screen and (max-width: 600px){
+    .container {
+      --target: 100%;
+      width: 100vw;
+      background: linear-gradient(to right, #fff var(--target), #000 var(--target));
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+  
+      font-family: "proxima-nova", sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+  }
   

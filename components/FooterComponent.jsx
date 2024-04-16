@@ -13,8 +13,8 @@ export function Footer() {
                     <div className={`${styles.layout_item} ${styles.w_50} ${styles.left}`}>
                         <div className={styles.newsletter}>
                         <h3 className={styles.newsletter_title}>
-                            このWebサイトは非公式です。
-                            <small>This website is unofficial.</small>
+                            このWebサイトは非公式です。<br />
+                            <small className={styles.title_en}>This website is unofficial.</small>
                         </h3>
                         <p>このWebサイトは非公式です。Newsのセクションを更新していただける有志の方を募集しております。（notionが使えれば運用可能）</p>
                         </div>
@@ -121,10 +121,12 @@ export function Footer() {
                         <p><strong>Contact</strong>: arisetoarukagaku[at]gmail.com（[at]を@に読み替えてください。）</p>
                     </div>
                     </div>
+                    <p className={styles.copy_sp}>&copy; 2024 AmauSyrup.net</p>
+
                 </div>
                 </div>
-                <div className={styles.footer_copyright}>
-                <p>&copy; 2024 AmauSyrup.net</p>
+                <div className={styles.copy_pc}>
+                    <p>&copy; 2024 AmauSyrup.net</p>
                 </div>
             </div>
         </footer>
