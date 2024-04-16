@@ -60,6 +60,7 @@ const GifPlayer = ({ gif, poster, time, repeat }) => {
           height: 'auto',
           width: 'auto',
           minHeight: '100vh',
+          miWidth: '100vw',
           top: '50%',
           left: '50%',
         }} />
@@ -68,6 +69,7 @@ const GifPlayer = ({ gif, poster, time, repeat }) => {
           height: 'auto',
           width: 'auto',
           minHeight: '100vh',
+          miWidth: '100vw',
           top: '50%',
           left: '50%',
           zIndex: -2,
