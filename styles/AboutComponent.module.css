@@ -70,17 +70,15 @@
     }
     .paragraphs {
         order: 1;
-        width: 100vw;
         padding: 1rem;
     }
     .charactor {
         order: 0;
-        width: 100vw;
         height: 100vh;
     }
     .image {
         margin-left: 10vw;
-        height: 100vh;
+        height: 50vh;
         width: auto;
     }
     .chardetail {
