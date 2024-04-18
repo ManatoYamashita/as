@@ -20,11 +20,11 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Home({ posts }) {
 
   useEffect(() => {
-    const page = document.querySelector(".wrap");
+    const page = document.querySelector(".container");
 
     gsap.to(page, {
-      ScrollTrigger: {
-        trigger: page,
+      scrollTrigger: {
+        trigger: ".container",
         scrub: 1,
       }
     })

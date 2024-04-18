@@ -28,9 +28,6 @@
   }
 
   .amau {
-    /* position: absolute;
-    top: 0;
-    left: 0; */
     height: 100vh;
     width: auto;
     z-index: -1;
@@ -41,7 +38,7 @@
   
   .title {
     position: absolute;
-    font-size: 12vw;
+    font-size: 8rem;
     font-family: 'Dela Gothic One', cursive;
     font-weight: 400;
     color: white;
@@ -91,10 +88,11 @@
       border: 1rem solid var(--primary);
     }
     .amau {
-      width: 1000px;
+      position: relative;
+      left: -20%;
     }
     .title {
       font-size: 3rem;
-      top: 70%;
+      top: 50%;
     }
   }
