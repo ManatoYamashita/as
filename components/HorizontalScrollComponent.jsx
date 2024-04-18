@@ -60,14 +60,16 @@ export function HorizontalScrollComponent() {
 
         .s-1 {
           z-index: 0;
-          scroll-snap-align: end;
+          margin-left: 10vw; 
         }
         .s-2 {
           background-color: var(--blue);  
           scroll-snap-align: end;
+          padding-right: 10vw;
         }
         .s-3 {
-          background-color: white;
+          width: 100vw;
+          height: 100vh;
           scroll-snap-align: end;
         }
 
@@ -75,7 +77,6 @@ export function HorizontalScrollComponent() {
           display: block;
           width: 100vw;
           height: 100vh;
-          background-color: white;
         }
       `}</style>
     </div>

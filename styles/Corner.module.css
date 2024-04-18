@@ -166,4 +166,38 @@
       width: 60vw;
       height: auto;
     }
+    .circle1 {
+      top: -8rem;
+      right: -8rem;
+      height: 15rem;
+      width: 15rem;
+    }
+    .yt {
+      top: 60%;
+      right: 60%;
+      font-size: 1.2rem;
+    }
+    .circle2 {
+      bottom: -8rem;
+      left: -8rem;
+      height: 15rem;
+      width: 15rem;
+    }
+    .x {
+      top: 20%;
+      left: 70%;
+      font-size: 1.2rem;
+    }
+    .circle3 {
+      bottom: -8rem;
+      right: -8rem;
+      height: 15rem;
+      width: 15rem;
+    }
+    .fb {
+      top: 20%;
+      right: 50%;
+      font-size: 1.2rem;
+    }
+
   }

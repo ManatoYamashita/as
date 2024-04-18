@@ -37,7 +37,7 @@ export function Songs() {
                     <Card key={index} title={card.title} text={card.text} url={card.url} />
                 ))}
             </div>
-            <CircleAnim size={100} top={"-30vw"} left={"30vw"} />
+            <CircleAnim size={50} top={"-20vw"} left={"60vw"} />
         </div>
     );
 }
