@@ -1,3 +1,6 @@
+import gsap from "gsap/dist/gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { useEffect } from "react";
 import { getDatabase } from "../lib/notion.js";
 import styles from "./index.module.css";
 
@@ -12,8 +15,20 @@ import { Footer } from "../components/FooterComponent.jsx";
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
 const pageOgImg = `${process.env.NEXT_PUBLIC_DEFAULT_SITE_URL}`;
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home({ posts }) {
+
+  useEffect(() => {
+    const page = document.querySelector(".wrap");
+
+    gsap.to(page, {
+      ScrollTrigger: {
+        trigger: page,
+        scrub: 1,
+      }
+    })
+  })
   return (
     <div className={styles.wrap}>
     <SeoHead

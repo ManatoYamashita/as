@@ -52,7 +52,9 @@ const GifPlayer = ({ gif, poster, time, repeat }) => {
         left: '50%',
         zIndex: -2,
         opacity: isVisible ? 1 : 0,
-        transition: 'opacity 0.5s ease-in-out'
+        transition: 'opacity 0.5s ease-in-out',
+        width: '100vw',
+        height: '100vh',
       }}
     >
       {playGif ? (
@@ -60,7 +62,7 @@ const GifPlayer = ({ gif, poster, time, repeat }) => {
           height: 'auto',
           width: 'auto',
           minHeight: '100vh',
-          miWidth: '100vw',
+          minWidth: '100vw',
           top: '50%',
           left: '50%',
         }} />
@@ -69,7 +71,7 @@ const GifPlayer = ({ gif, poster, time, repeat }) => {
           height: 'auto',
           width: 'auto',
           minHeight: '100vh',
-          miWidth: '100vw',
+          minWidth: '100vw',
           top: '50%',
           left: '50%',
           zIndex: -2,

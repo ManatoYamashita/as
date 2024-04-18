@@ -13,6 +13,23 @@ export const SeoHead = ({
   const siteUrl = `${process.env.NEXT_PUBLIC_DEFAULT_SITE_URL}`;
   const Url = `${siteUrl}${router.asPath}`;
   const siteTitle = `${title} - ${titleTemplate}`;
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.amausyrup.net",
+    "name": "AmauSyrup.net - 天羽しろっぷ",
+    "description": "AmauSyrup.netは、VTuber『天羽しろっぷ』の非公式ファンサイトです。notionAPIを使用して、天羽しろっぷの最新情報をお届けします。",
+    "publisher": {
+      "@type": "Organization",
+      "name": "AmauSyrup.net",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.amausyrup.net/assets/amau.webp"
+      }
+    }
+  };
+
   return (
     <Head>
       <meta name="viewport" content={"width=device-width, initial-scale=1"} />
@@ -26,6 +43,10 @@ export const SeoHead = ({
       <meta property="og:description" content={description} />
       <meta property="og:type" content={ogType} />
       <link rel="icon" type="image/svg+xml" href={"/samplelogo.svg"} />
+
+      <script type="application/ld+json">
+        {JSON.stringify(websiteSchema)}
+      </script>
     </Head>
   );
 };

@@ -22,7 +22,7 @@ export function HorizontalScrollComponent() {
         pin: true, // スクロール中に`.container`要素を固定する
         invalidateOnRefresh: true, // ウィンドウのリサイズ時にアニメーションをリセットする
         anticipatePin: 1, // アニメーションが開始する前にピン操作を行う
-        scrub: 0, // スクロールとアニメーションの同期をどの程度スムーズにするか（数字が大きいほどスムーズ）
+        scrub: 1, // スクロールとアニメーションの同期をどの程度スムーズにするか（数字が大きいほどスムーズ）
         end: () => "+=" + document.querySelector(".container").offsetWidth // アニメーションの終了点を設定
       }
     });
