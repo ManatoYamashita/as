@@ -6,6 +6,9 @@
     height: 100vh;
     display: flex;
 }
+.container {
+  color: black;
+}
 .newsletter_title {
   font-family: "Noto Serif Display", serif;
   font-size: 2rem;
@@ -16,25 +19,7 @@
   font-size: 1.2rem;
   text-align: left;
 }
-.c_link {
-  text-decoration: none;
-  color: black;
-  font-weight: 400;
-  transition: 0.3s ease-in;
-  border-bottom: 1px solid transparent;
-  margin-bottom: 0.5rem;
-  display: inline-flex;
-}
-.c_link:hover {
-  border-bottom: 1px solid black;
-}
-.c_nav_tool_list {
-  list-style-type: none;
-  padding: 0;
-}
-.flex {
-  display: flex;
-}
+
 .footer_back {
   position: absolute;
   top: 0;
@@ -72,9 +57,11 @@
   padding: 0 1rem;
 }
 .copy_pc {
+  color: black;
   display: block;
 }
 .copy_sp {
+  color: white;
   display: none;
 }
 
