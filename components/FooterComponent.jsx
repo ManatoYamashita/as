@@ -3,8 +3,7 @@ import styles from '../styles/FooterComponent.module.css';
 export function Footer() {
     return (
         <footer className={styles.wrap}>
-            <div className={styles.footer_back} >
-            </div>
+            <div className={styles.footer_back} ></div>
 
             <div className={styles.container}>
                 <div className={styles.footer_inner}>
