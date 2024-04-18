@@ -7,7 +7,7 @@
     display: flex;
 }
 .container {
-  color: black;
+  color: white;
 }
 .newsletter_title {
   font-family: "Noto Serif Display", serif;
@@ -32,14 +32,7 @@
   border: none;
 }
 .footer_inner {
-    background: black;
-    /* Safari 9+, iOS Safari 9+ に対応 */
-    -webkit-backdrop-filter: blur(50px);
-    /* backdrop-filterをサポートするブラウザに対応 */
-    backdrop-filter: blur(50px);
-    /* Firefoxなどbackdrop-filterをサポートしないブラウザ用のフォールバック */
-    background: rgba(255, 255, 255, 0.8);
-    border: 0.1px solid rgba(233, 232, 232, 0.208);
+    border: 1px solid rgba(255, 255, 255);
     border-radius: 5px;
   padding: 2rem;
   margin: 1rem 0;
@@ -57,11 +50,11 @@
   padding: 0 1rem;
 }
 .copy_pc {
-  color: black;
+  color: white;
   display: block;
 }
 .copy_sp {
-  color: white;
+  color: rgb(255, 255, 255);
   display: none;
 }
 
