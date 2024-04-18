@@ -28,7 +28,8 @@ export default function Home({ posts }) {
         scrub: 1,
       }
     })
-  })
+  }, []);
+  
   return (
     <div className={styles.wrap}>
     <SeoHead

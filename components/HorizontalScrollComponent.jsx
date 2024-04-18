@@ -15,7 +15,7 @@ export function HorizontalScrollComponent() {
     
     // `sections`に対してアニメーションを適用
     gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1) , // 横方向への移動距離を設定
+      xPercent: -120 * (sections.length - 1) , // 横方向への移動距離を設定
       ease: "none", // アニメーションのイージングを無効にする
       scrollTrigger: { // スクロールトリガーの設定
         trigger: ".container", // アニメーションが起動するトリガーとなる要素
@@ -68,8 +68,8 @@ export function HorizontalScrollComponent() {
           padding-right: 10vw;
         }
         .s-3 {
-          width: 100vw;
-          height: 100vh;
+          width: 150vw;
+          height: 130vh;
           scroll-snap-align: end;
         }
 
