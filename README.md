@@ -1,6 +1,8 @@
 # AmauSyrup.net
 
-![amausyrup](https://github.com/ManatoYamashita/as/assets/95745485/138ddd51-af7a-42dd-9c67-d2af11c3cf1a)
+* **Link: [天羽しろっぷ(unofficial)](https://www.amausyrup.net)**
+
+<img src="https://github.com/ManatoYamashita/as/assets/95745485/138ddd51-af7a-42dd-9c67-d2af11c3cf1a" width="500" height="auto">
 
 Vtuber天羽しろっぷさんの非公式ファンサイトです。notionを用いて彼女に関するnewsを配信することが可能です。
 
