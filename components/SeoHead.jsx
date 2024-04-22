@@ -18,10 +18,10 @@ export const SeoHead = ({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "url": "https://www.amausyrup.net",
-    "name": "AmauSyrup.net - 天羽しろっぷ",
+    "name": "天羽しろっぷ unofficial",
     "description": "AmauSyrup.netは、VTuber『天羽しろっぷ』の非公式ファンサイトです。notionAPIを使用して、天羽しろっぷの最新情報をお届けします。",
     "publisher": {
-      "@type": "Organization",
+      "@type": "Person",
       "name": "AmauSyrup.net",
       "logo": {
         "@type": "ImageObject",
