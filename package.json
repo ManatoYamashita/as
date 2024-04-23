@@ -4,9 +4,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "postbuild": "next-sitemap"
+    "build": "next build && next-sitemap",
+    "postbuild": "next-sitemap",
+    "start": "next start"
   },
   "dependencies": {
     "@coreui/react": "^4.11.1",
