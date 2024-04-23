@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 
 export const SeoHead = ({
   title,
-  titleTemplate,
   description,
   ogType,
   imgUrl,
@@ -12,7 +11,7 @@ export const SeoHead = ({
   const router = useRouter();
   const siteUrl = `${process.env.NEXT_PUBLIC_DEFAULT_SITE_URL}`;
   const Url = `${siteUrl}${router.asPath}`;
-  const siteTitle = `${title} - ${titleTemplate}`;
+  const siteTitle = `${title}`;
 
   const websiteSchema = {
     "@context": "https://schema.org",
@@ -42,7 +41,7 @@ export const SeoHead = ({
       <meta name="description" content={description} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content={ogType} />
-      <link rel="icon" type="image/svg+xml" href={"/samplelogo.svg"} />
+      <link rel="icon" type="image/svg+xml" href={"/favicon.ico"} />
 
       <script type="application/ld+json">
         {JSON.stringify(websiteSchema)}

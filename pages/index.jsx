@@ -34,7 +34,6 @@ export default function Home({ posts }) {
     <div className={styles.wrap}>
     <SeoHead
       title={"天羽しろっぷ unofficial"}
-      titleTemplate={"天羽しろっぷ 非公式ファンサイト"}
       description={"AmauSyrup.netは、VTuber『天羽しろっぷ』の非公式ファンサイトです。notionAPIを使用して、天羽しろっぷの最新情報をお届けします。"}
       ogType={"website"}
       imgUrl={`${pageOgImg}/ogp.webp`}
