@@ -47,9 +47,12 @@ const GifPlayer = ({ gif, poster, time, repeat }) => {
         userSelect: 'none',
         pointerEvents: 'none',
         position: 'absolute',
-        transform: 'translate(-50%, -50%)',
-        top: '50%',
-        left: '50%',
+        // transform: 'translate(-50%, -50%)',
+        // top: '50%',
+        // left: '0%',
+        display: 'flex',   
+        justifyContent: 'center',
+        alignItems: 'center',   
         zIndex: -2,
         opacity: isVisible ? 1 : 0,
         transition: 'opacity 0.5s ease-in-out',
@@ -58,22 +61,14 @@ const GifPlayer = ({ gif, poster, time, repeat }) => {
       }}
     >
       {playGif ? (
-        <Image src={gif} alt="GIF image" style={{
+        <Image loading='eager' src={gif} alt="GIF image" style={{
           height: 'auto',
-          width: 'auto',
           minHeight: '100vh',
-          minWidth: '100vw',
-          top: '50%',
-          left: '50%',
         }} />
       ) : (
-        <Image src={poster} alt="Static image" style={{
+        <Image loading='eager' src={poster} alt="Static image" style={{
           height: 'auto',
-          width: 'auto',
           minHeight: '100vh',
-          minWidth: '100vw',
-          top: '50%',
-          left: '50%',
           zIndex: -2,
           transform: 'z-index .5s forwards',
         }} />

@@ -11,10 +11,10 @@ export function Footer() {
                     <div className={styles.layout}>
                     <div className={`${styles.layout_item} ${styles.w_50} ${styles.left}`}>
                         <div className={styles.newsletter}>
-                        <h3 className={styles.newsletter_title}>
+                        <h1 className={styles.newsletter_title}>
                             このWebサイトは非公式です。<br />
                             <small className={styles.title_en}>This website is unofficial.</small>
-                        </h3>
+                        </h1>
                         <p>このWebサイトは非公式です。Newsのセクションを更新していただける有志の方を募集しております。（notionが使えれば運用可能）</p>
                         </div>
                     </div>
