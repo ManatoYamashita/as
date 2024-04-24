@@ -33,7 +33,7 @@ export const SeoHead = ({
     <Head>
       <meta name="viewport" content={"width=device-width, initial-scale=1"} />
       <title>{siteTitle}</title>
-      <link href={Url} rel="canonical" />
+      <link rel="canonical" href={Url} />
       <meta name="twitter:card" content={"summary_large_image"} />
       <meta property="og:image" content={imgUrl} />
       <meta property="og:title" content={siteTitle} />
@@ -42,6 +42,7 @@ export const SeoHead = ({
       <meta property="og:description" content={description} />
       <meta property="og:type" content={ogType} />
       <link rel="icon" type="image/svg+xml" href={"/favicon.ico"} />
+      <html lang={"ja"} />
 
       <script type="application/ld+json">
         {JSON.stringify(websiteSchema)}
