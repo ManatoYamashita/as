@@ -24,9 +24,9 @@ export const SeoHead = ({
       "name": "AmauSyrup.net",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.amausyrup.net/assets/amau.webp"
-      }
-    }
+        "url": "https://www.amausyrup.net/assets/amausyrup-logo.webp",
+      },
+    },
   };
 
   return (
