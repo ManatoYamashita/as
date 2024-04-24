@@ -42,11 +42,8 @@ export const SeoHead = ({
       <meta property="og:description" content={description} />
       <meta property="og:type" content={ogType} />
       <link rel="icon" type="image/svg+xml" href={"/favicon.ico"} />
-      <html lang={"ja"} />
 
-      <script type="application/ld+json">
-        {JSON.stringify(websiteSchema)}
-      </script>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}></script>
     </Head>
   );
 };
