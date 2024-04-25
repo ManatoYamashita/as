@@ -61,12 +61,12 @@ const GifPlayer = ({ gif, poster, time, repeat }) => {
       }}
     >
       {playGif ? (
-        <Image loading='eager' src={gif} alt="GIF image" style={{
+        <Image priority loading='eager' src={gif} alt="GIF image" style={{
           height: 'auto',
           minHeight: '100vh',
         }} />
       ) : (
-        <Image loading='eager' src={poster} alt="Static image" style={{
+        <Image priority loading='eager' src={poster} alt="Static image" style={{
           height: 'auto',
           minHeight: '100vh',
           zIndex: -2,

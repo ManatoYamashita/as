@@ -29,6 +29,8 @@ export const SeoHead = ({
     },
   };
 
+  const schemaString = JSON.stringify(websiteSchema);
+
   return (
     <Head>
       <meta name="viewport" content={"width=device-width, initial-scale=1"} />
@@ -41,12 +43,10 @@ export const SeoHead = ({
       <meta name="description" content={description} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content={ogType} />
-      <link rel="icon" type="image/svg+xml" href={"/favicon.ico"} />
-      <html lang={"ja"} />
+      <link rel="icon" href={"/favicon.ico"} />
+      
 
-      <script type="application/ld+json">
-        {JSON.stringify(websiteSchema)}
-      </script>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: schemaString }}></script>
     </Head>
   );
 };

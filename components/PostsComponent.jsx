@@ -32,7 +32,8 @@ export function Posts({ posts }) {
                 );
             })}
             </ul>
-            <Btn btn="もっと見る" tip="じゃーーんぷ！" to="/about" />
+            {/* UnderConstraction */}
+            <Btn btn="もっと見る" tip="じゃーーんぷ！" to="#" />
 
         </div>
     );
