@@ -14,10 +14,12 @@ export function Cover() {
                 <div className={styles.imagewrap}>
                     <Image src={AmauImage} alt="天羽しろっぷ" className={styles.amau} />
                 </div>
-                <h1 className={styles.title}>
-                    天羽しろっぷ
+                <div className={styles.title}>
+                    <h1 className={styles.maintitle}>
+                        天羽しろっぷ
+                    </h1>
                     <p className={styles.subtitle}>非公式ファンサイト</p>
-                </h1>
+                </div>
             </div>
         </div>
     )

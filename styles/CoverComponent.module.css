@@ -38,7 +38,6 @@
   
   .title {
     position: absolute;
-    font-size: 8rem;
     font-family: 'Dela Gothic One', cursive;
     font-weight: 400;
     color: white;
@@ -52,10 +51,13 @@
     animation-delay: 2.5s;
   }
 
-  .subtitle {
-    text-align: end;
+  .maintitle {
+    font-size: 10vw;
     margin: 0;
-    font-size: 2rem;
+  }
+  .subtitle {
+    margin: 0;
+    font-size: 5vw;
     opacity: 0;
     animation: fadeUp 1s ease-in-out forwards;
     animation-delay: 3s;
@@ -92,7 +94,12 @@
       left: -20%;
     }
     .title {
+      top: 65%;
+    }
+    .maintitle {
       font-size: 3rem;
-      top: 50%;
+    }
+    .subtitle {
+      font-size: 1.5rem;
     }
   }
