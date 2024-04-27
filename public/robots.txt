@@ -1,4 +1,10 @@
+# *
 User-agent: *
-Disallow: /api/
-Disallow: /next/
+Allow: /
+
+# Host
+Host: https://www.amausyrup.net
+
+# Sitemaps
+Sitemap: https://www.amausyrup.net/sitemap.xml
 Sitemap: https://www.amausyrup.net/amausyrup.xml
